@@ -1,0 +1,19 @@
+Synopsis: Device meant to replicate the function of common mp3 players, but using .wav files rather than .mp3 files. Music files are stored on a microSD card that can be edited via computer. The LCD Display displays song titles as they are being played. The audio signal is rid of DC signal noise using a ceramic capacitor, and passed into a low voltage audio amplifier IC. 
+
+	Comes with six buttons, a scroll up button, a scroll down button (for song selection), volume up/down buttons, play/pause button, and a flowstate button. The flowstate button can be used to toggle between linear playing of the music file list, shuffled playing, and repeated playing. The trimpot is only to set the contrast on the LCD. The gain on the amplifier ranges from 20 to 200, and can be controlled by the capacitance value of the capacitor attached to pins 1 and 8. The microSD card module communicates with the MCU via MOSI, MISO, and SCK.
+
+	This device only works with .wav files, and as of now does not support .mp3 file parsing functionality. This is due to the relative simplicity of converting .wav files to audio signals.
+
+Collaborators: Santiago Orellana
+
+Parts List:
+- LM386 Audio Amplifier IC
+- ATMEGA328P MCU
+- various assorted capacitors
+- 10 kiloohm potentiometer
+- 16x2 Liquid Crystal Display
+- Timing Oscillator Crystal
+- microSD card module
+- 7 push buttons (one for power)
+- 5v li ion charging module
+- small li ion battery
